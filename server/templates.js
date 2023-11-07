@@ -119,634 +119,1069 @@ significant endeavor. It's important to thoroughly plan your
 project, consider security, and potentially consult with experienced 
 developers or teams to ensure success.
 `;
-const static =`
-Creating a static web application involves building a website without server-side logic or dynamic content generation. Here's a step-by-step guide and a basic template to help you get started using HTML, CSS, and JavaScript. We'll use popular libraries and tools like Bootstrap and FontAwesome to simplify the process.
 
-**1. Project Structure**
 
-First, set up your project structure. Create a directory for your project and organize your files like this:
 
-- project-folder/
-  - index.html
-  - css/
-    - styles.css
-  - js/
-    - main.js
-  - images/
+const static =`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web Development Guide</title>
+</head>
+<body>
+    <br>
+    <header>
+        <h1>Step-by-Step Guide to Becoming a Static Web Developer</h1>
+    </header>
+    <br>
+    <main>
+        <section>
+            <h2>Step 1: Set Up Your Development Environment</h2>
+            <p>Before you start, make sure you have the necessary tools installed on your computer:</p>
+            <ul>
+                <li>Text editor or integrated development environment (IDE)</li>
+                <li>Web browser for testing</li>
+            </ul>
+            <p>Example Templates:</p>
+            <ul>
+                <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (Text Editor)</li>
+            </ul>
+        </section>
 
-**2. HTML Structure**
+        <section>
+            <h2>Step 2: Create a Project Folder</h2>
+            <p>Create a folder to organize your project files. Here's a basic structure:</p>
+            <pre>
+                my-static-website/
+                ├── index.html
+                ├── styles.css
+                └── images/
+            </pre>
+            <p>Example Template:</p>
+            <ul>
+                <li><a href="https://github.com/openai/guided-developer/tree/main/static-website" target="_blank">Project Structure on GitHub</a></li>
+            </ul>
+        </section>
 
-Create your HTML file (index.html) with a basic structure:
+        <section>
+            <h2>Step 3: Create HTML Files</h2>
+            <p>Create HTML files to structure your web pages. Use a simple template as a starting point:</p>
+            <pre>
+                <!-- index.html -->
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                    &lt;title&gt;My Static Website&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;header&gt;
+                        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                        &lt;p&gt;This is the homepage of my static website.&lt;/p&gt;
+                    &lt;/main&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p>Example Templates:</p>
+            <ul>
+                <li><a href="https://github.com/openai/guided-developer/blob/main/static-website/index.html" target="_blank">Index Page Template</a></li>
+                <li><a href="https://github.com/openai/guided-developer/blob/main/static-website/about.html" target="_blank">About Page Template</a></li>
+            </ul>
+        </section>
 
-html
+        <section>
+            <h2>Step 4: Create a CSS File</h2>
+            <p>Create a CSS file to style your website. Start with a basic CSS template:</p>
+            <pre>
+                /* styles.css */
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 10px;
+                }
+
+                main {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+            </pre>
+            <p>Example Template:</p>
+            <ul>
+                <li><a href="https://github.com/openai/guided-developer/blob/main/static-website/styles.css" target="_blank">CSS Styles Template</a></li>
+            </ul>
+        </section>
+
+        <!-- Add more sections for additional steps as needed -->
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Intelimanage</p>
+    </footer>
+</body>
+</html>
+</html>
+`
+
+const Dynamic =`
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Your Static Web App</title>
+    <title>Dynamic Web Developer Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Step-by-Step Guidance for Dynamic Web Developers</h1>
 
-    <!-- Content -->
-    <main>
-        <section>
-            <h1>Welcome to Your Web App</h1>
-            <p>This is a static web application template.</p>
-        </section>
-    </main>
+    <h2>Step 1: Learn the Fundamentals</h2>
+    <p>Start with the basics of web development, including HTML, CSS, and JavaScript.</p>
+    <p>Example: A simple HTML template:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2023 Your Static Web App
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
-
-
-**3. CSS Styles**
-
-Create a CSS file (styles.css) to style your web application. You can use custom CSS or a CSS framework like Bootstrap.
-
-css
-/* styles.css */
-/* Add your custom styles here */
+    <h2>Step 2: CSS Styling</h2>
+    <p>Learn CSS to style your web pages and make them visually appealing.</p>
+    <p>Example: CSS for styling your web page:</p>
+    <pre>
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f0f0f0;
 }
 
-header {
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+    </pre>
+
+    <h2>Step 3: JavaScript Fundamentals</h2>
+    <p>Master JavaScript to add interactivity to your web pages.</p>
+    <p>Example: A simple JavaScript function:</p>
+    <pre>
+function greet(name) {
+    alert('Hello, ' + name + '!');
+}
+greet('John');
+    </pre>
+
+    <h2>Step 4: Front-End Frameworks</h2>
+    <p>Explore front-end frameworks like React or Vue.js for building interactive user interfaces.</p>
+    <p>Example: A basic React component:</p>
+    <pre>
+import React from 'react';
+
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Hello, React!&lt;/h1&gt;
+            &lt;p&gt;This is a React component.&lt;/p&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+    </pre>
+
+    <h2>Step 5: Back-End Development</h2>
+    <p>Learn a back-end technology like Node.js or Python to handle server-side operations.</p>
+    <p>Example: A simple Node.js server:</p>
+    <pre>
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello, Node.js!');
+});
+
+server.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+    </pre>
+
+    <h2>Step 6: Databases</h2>
+    <p>Study databases like MySQL, MongoDB, or PostgreSQL for data storage and retrieval.</p>
+    <p>Example: A MySQL query to retrieve data:</p>
+    <pre>
+SELECT * FROM users WHERE username = 'john_doe';
+    </pre>
+
+    <h2>Step 7: Full-Stack Development</h2>
+    <p>Combine front-end and back-end skills to become a full-stack developer.</p>
+    <p>Example: A full-stack web application architecture.</p>
+
+    <h2>Step 8: Version Control</h2>
+    <p>Learn version control systems like Git to collaborate on projects and track changes.</p>
+    <p>Example: Basic Git commands:</p>
+    <pre>
+git init
+git add .
+git commit -m 'Initial commit'
+git push origin master
+    </pre>
+
+    <h2>Step 9: Hosting and Deployment</h2>
+    <p>Understand hosting platforms and deploy your web applications online.</p>
+    <p>Example: Deploying a website to a cloud service.</p>
+
+    <h2>Step 10: Continuous Learning</h2>
+    <p>Web development is ever-evolving. Keep learning, stay updated, and work on personal projects.</p>
+
+</body>
+</html>
+`;
+
+const react = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-by-Step Guidance for React Web Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Step-by-Step Guidance for React Web Developer</h1>
+    
+    <h2>Step 1: Set Up Your Development Environment</h2>
+    <p>Before you start, ensure you have a development environment set up:</p>
+    <ul>
+        <li>Install <a href="https://nodejs.org/">Node.js</a> for JavaScript runtime.</li>
+        <li>Install a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+    </ul>
+
+    <h2>Step 2: Learn JavaScript and ES6</h2>
+    <p>React is built with JavaScript, so it's important to have a good understanding of the language. Study ES6 features such as arrow functions, classes, and modules.</p>
+    
+    <h2>Step 3: Understand the Basics of React</h2>
+    <p>React is a JavaScript library for building user interfaces. Learn its core concepts:</p>
+    <ul>
+        <li>Components</li>
+        <li>Props</li>
+        <li>State</li>
+        <li>Lifecycle methods</li>
+    </ul>
+
+    <h2>Step 4: Create Your First React App</h2>
+    <p>Use <a href="https://create-react-app.dev/">Create React App</a> to quickly set up a new React project.</p>
+    
+    <h2>Step 5: Build Your First Component</h2>
+    <p>Create a simple React component, for example:</p>
+    <pre>
+    <code>
+import React from 'react';
+
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Hello, React!&lt;/h1&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+    </code>
+    </pre>
+
+    <h2>Step 6: Add Styling with CSS</h2>
+    <p>You can add CSS to your React components by either using traditional stylesheets or CSS-in-JS libraries like <a href="https://styled-components.com/">styled-components</a>.</p>
+
+    <h2>Step 7: Learn about State Management</h2>
+    <p>Study state management libraries such as <a href="https://redux.js.org/">Redux</a> or React's own <a href="https://reactjs.org/docs/context.html">Context API</a>.</p>
+
+    <h2>Step 8: Explore Routing</h2>
+    <p>For multi-page applications, use React Router (<a href="https://reactrouter.com/">React Router</a>) to manage navigation.</p>
+
+    <h2>Step 9: Work with API Integration</h2>
+    <p>Learn how to make API requests with libraries like <a href="https://axios-http.com/">Axios</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch API</a>.</p>
+
+    <h2>Step 10: Deploy Your React App</h2>
+    <p>Choose a hosting service (e.g., <a href="https://www.netlify.com/">Netlify</a>, <a href="https://vercel.com/">Vercel</a>) to deploy your React app.</p>
+</body>
+</html>
+`
+
+const angular = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Web Developer Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ol {
+            margin: 20px;
+        }
+
+        li {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Step-by-Step Guide for Angular Web Developers</h1>
+
+    <ol>
+        <li>
+            <h2>Setting Up Angular</h2>
+            <p>Start by setting up Angular in your project:</p>
+            <pre>
+                <code>
+                    npm install -g @angular/cli
+                    ng new my-angular-app
+                    cd my-angular-app
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <h2>Creating Components</h2>
+            <p>Create components to structure your application:</p>
+            <pre>
+                <code>
+                    ng generate component my-component
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <h2>Templates and Data Binding</h2>
+            <p>Use Angular templates and data binding:</p>
+            <pre>
+                <code>
+                    &lt;h1&gt;{{ title }}&lt;/h1&gt;
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <h2>Routing</h2>
+            <p>Set up routing for navigation:</p>
+            <pre>
+                <code>
+                    const routes: Routes = [
+                        { path: 'home', component: HomeComponent },
+                        { path: 'about', component: AboutComponent },
+                    ];
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <h2>Services</h2>
+            <p>Create services for data handling:</p>
+            <pre>
+                <code>
+                    ng generate service data
+                </code>
+            </pre>
+        </li>
+    </ol>
+
+    <p>These are just the basic steps to get you started with Angular. Explore Angular's official documentation and tutorials for more in-depth information and examples.</p>
+</body>
+</html>
+`
+
+const vue = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js Web Developer Guide</title>
+</head>
+<body>
+    <h1>Step-by-Step Guide to Becoming a Vue.js Web Developer</h1>
+    
+    <h2>Step 1: Set Up Your Development Environment</h2>
+    <p>Before you start working with Vue.js, make sure to set up your development environment:</p>
+    <pre>
+        <code>
+            &lt;script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"&gt;&lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 2: Create Your First Vue Instance</h2>
+    <p>Create a simple Vue instance and bind it to an HTML element:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                {{ message }}
+            &lt;/div&gt;
+            
+            &lt;script&gt;
+                new Vue({
+                    el: '#app',
+                    data: {
+                        message: 'Hello, Vue.js!'
+                    }
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 3: Use Vue Directives</h2>
+    <p>Vue provides directives to manipulate the DOM and bind data. Here's an example of using the <code>v-bind</code> directive:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                &lt;img v-bind:src="imageUrl"&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                new Vue({
+                    el: '#app',
+                    data: {
+                        imageUrl: 'https://example.com/image.jpg'
+                    }
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 4: Create Vue Components</h2>
+    <p>Vue components allow you to build reusable UI elements. Here's an example:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                &lt;my-component&gt;&lt;/my-component&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                Vue.component('my-component', {
+                    template: '&lt;div&gt;This is a custom component&lt;/div&gt;'
+                });
+
+                new Vue({
+                    el: '#app'
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 5: Handle User Input</h2>
+    <p>Vue allows you to handle user input easily. Here's an example of using the <code>v-model</code> directive:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                &lt;input v-model="message"&gt;
+                &lt;p&gt;You typed: {{ message }}&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                new Vue({
+                    el: '#app',
+                    data: {
+                        message: ''
+                    }
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 6: Fetch Data from an API</h2>
+    <p>Vue can be used to fetch and display data from an API. Here's an example using Axios:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                &lt;ul&gt;
+                    &lt;li v-for="post in posts" :key="post.id"&gt;{{ post.title }}&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                new Vue({
+                    el: '#app',
+                    data: {
+                        posts: []
+                    },
+                    mounted() {
+                        axios.get('https://jsonplaceholder.typicode.com/posts')
+                            .then(response =&gt; {
+                                this.posts = response.data;
+                            });
+                    }
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 7: Routing with Vue Router</h2>
+    <p>For building single-page applications, you can use Vue Router. Here's a basic example:</p>
+    <pre>
+        <code>
+            &lt;div id="app"&gt;
+                &lt;router-view&gt;&lt;/router-view&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                const Home = { template: '&lt;div&gt;Welcome to the Home Page&lt;/div&gt;' };
+                const About = { template: '&lt;div&gt;Learn About Us&lt;/div&gt;' };
+
+                const routes = [
+                    { path: '/', component: Home },
+                    { path: '/about', component: About }
+                ];
+
+                const router = new VueRouter({
+                    routes
+                });
+
+                new Vue({
+                    el: '#app',
+                    router
+                });
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Step 8: Build and Deploy Your Vue.js App</h2>
+    <p>When your Vue.js application is ready, you can build and deploy it to a web server or hosting service.</p>
+    
+    <h2>Conclusion</h2>
+    <p>Congratulations! You've now completed a basic guide to becoming a Vue.js web developer. Continue to explore the Vue.js documentation and build more complex applications as you progress in your development journey.</p>
+</body>
+</html>
+`
+
+const ecomm = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Step-by-Step eCommerce Web Development</title>
+</head>
+<body>
+    <h1>Step-by-Step eCommerce Web Development</h1>
+
+    <h2>Step 1: Project Setup</h2>
+    <p>Create a new project folder for your eCommerce website and set up the necessary files and directories.</p>
+
+    <h2>Step 2: Choose a Tech Stack</h2>
+    <p>Select the technologies you will use for your project, such as HTML, CSS, JavaScript, and a backend framework like Node.js or Ruby on Rails.</p>
+
+    <h2>Step 3: Design Your Website</h2>
+    <p>Create wireframes and design your website's user interface. Use tools like Figma or Adobe XD for design.</p>
+
+    <h2>Step 4: Homepage</h2>
+    <p>Create an example template for your eCommerce website's homepage:</p>
+    <code><!-- Example homepage HTML template --></code>
+
+    <h2>Step 5: Product Listings</h2>
+    <p>Create an example template for product listings:</p>
+    <code><!-- Example product listings HTML template --></code>
+
+    <h2>Step 6: Product Details</h2>
+    <p>Create an example template for displaying detailed product information:</p>
+    <code><!-- Example product details HTML template --></code>
+
+    <h2>Step 7: Shopping Cart</h2>
+    <p>Create an example template for the shopping cart page:</p>
+    <code><!-- Example shopping cart HTML template --></code>
+
+    <h2>Step 8: User Authentication</h2>
+    <p>Implement user registration and login functionality.</p>
+
+    <h2>Step 9: Payment Integration</h2>
+    <p>Integrate a payment gateway (e.g., Stripe) for processing payments.</p>
+
+    <h2>Step 10: Backend Development</h2>
+    <p>Develop the server-side logic for your eCommerce website.</p>
+
+    <h2>Step 11: Database Setup</h2>
+    <p>Set up a database to store product information, user data, and orders.</p>
+
+    <h2>Step 12: Testing</h2>
+    <p>Thoroughly test your website, including functionality, responsiveness, and security.</p>
+
+    <h2>Step 13: Deployment</h2>
+    <p>Deploy your eCommerce website to a web server or a cloud platform (e.g., AWS, Heroku).</p>
+
+    <h2>Step 14: Marketing and SEO</h2>
+    <p>Implement SEO strategies and marketing efforts to attract customers to your website.</p>
+
+    <h2>Step 15: Maintenance</h2>
+    <p>Regularly update and maintain your website, fix bugs, and add new features as needed.</p>
+</body>
+</html>
+`
+
+const navbar=`
+<h1>1. Clasic Top Navbar</h1>
+<nav class="navbar1">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<h1 id='html'>HTML Code</h1>
+<p id="htmlcode">
+&lt nav class="navbar1" &gt <br>
+    &lt ul &gt <br>
+        &lt li &gt&lt a href="#" &gtHome&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gtAbout&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gtServices&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gtPortfolio&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gtContact&lt /a &gt&lt /li &gt <br>
+    &lt /ul &gt <br>
+&lt /nav &gt <br>
+</p>
+<h1 id='css'>CSS Code</h1>
+<p id='csscode'>
+.navbar1 {<br>
+    background-color: #333;<br>
+    padding: 10px;<br>
+    width:800px;<br>
+    margin:auto;<br>
+}<br>
+
+.navbar ul {<br>
+    list-style: none;<br>
+    padding: 0;<br>
+    display: flex;<br>
+}<br>
+
+.navbar li {<br>
+    margin: 0 20px;<br>
+}<br>
+
+.navbar a {<br>
+    text-decoration: none;<br>
+    color: #fff;<br>
+}<br>
+</p>
+
+<style>
+    .navbar1 {
+        background-color: #333;
+        padding: 10px;
+        width:800px;
+        margin:auto;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 20px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+
+<h1>2. Transparent Navbar</h1>
+<nav class="navbartransparent">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<h1 id='html'>HTML Code</h1>
+<p id="htmlcode">
+&lt nav class="navbar transparent" &gt <br>
+    &lt ul &gt <br>
+        &lt li &gt &lt a href="#" &gt Home&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt About&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt Services&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt Portfolio&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt Contact&lt /a &gt &lt /li &gt <br>
+    &lt /ul &gt <br>
+&lt /nav &gt <br>
+</p>
+<style>
+.navbartransparent {
+    background-color: transparent;
+    width:800px;
+    margin:auto;
+    border:1px solid blue;
+}
+.navbartransparent > ul > li > a{
+    color:blue;
+    text-decoration:none;
+}
+</style>
+<h1 id='css'>CSS Code</h1>
+<p id='csscode'>
+.navbartransparent { <br>
+    background-color: transparent; <br>
+    width:800px; <br>
+    margin:auto; <br>
+    border:1px solid blue; <br>
+} <br>
+.navbartransparent > ul > li > a{ <br>
+    color:blue; <br>
+    text-decoration:none; <br>
+} <br>
+</p>
+
+<h1>3. Centered Navbar</h1>
+<nav class="navbarcentered">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<h1 id='html'>HTML Code</h1>
+<p id="htmlcode">
+&lt nav class="navbarcentered" &gt <br>
+     &lt ul &gt <br>
+         &lt li &gt &lt a href="#" &gt Home &lt /a &gt &lt /li &gt <br>
+         &lt li &gt &lt a href="#" &gt About &lt /a &gt &lt /li &gt <br>
+         &lt li &gt &lt a href="#" &gt Services &lt /a &gt &lt /li &gt <br>
+         &lt li &gt &lt a href="#" &gt Portfolio &lt /a &gt &lt /li &gt <br>
+         &lt li &gt &lt a href="#" &gt Contact &lt /a &gt &lt /li &gt <br>
+     &lt /ul &gt <br>
+ &lt /nav &gt <br>
+</p>
+<style>
+.navbarcentered {
+    width:800px;
+    margin:auto;
+    justify-content:center;
+}
+
+.navbarcentered ul {
+    display: inline-block;
+}
+</style>
+
+<h1 id='css'>CSS Code</h1>
+<p id='csscode'>
+.navbarcentered {<br>
+    text-align: center;<br>
+}<br>
+
+.navbarcentered ul {<br>
+    display: inline-block;<br>
+}<br>
+</p>
+
+<h1>4. Dropdown Navbar</h1>
+<nav class="navbar mega-menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="#">Service 1</a>
+                <a href="#">Service 2</a>
+                <a href="#">Service 3</a>
+            </div>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<style>
+.navbar.mega-menu .dropdown {
+    position: relative;
+}
+
+.navbar.mega-menu .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar.mega-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+
+<h1 id='html'>HTML Code</h1>
+<p id="htmlcode">
+&lt nav class="navbar mega-menu" &gt <br>
+    &lt ul &gt <br>
+        &lt li &gt &lt a href="#" &gt Home&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt About&lt /a &gt &lt /li &gt <br>
+        &lt li class="dropdown" &gt <br>
+            &lt a href="#" &gt Services&lt /a &gt <br>
+            &lt div class="dropdown-content" &gt <br>
+                &lt a href="#" &gt Service 1&lt /a &gt <br>
+                &lt a href="#" &gt Service 2&lt /a &gt <br>
+                &lt a href="#" &gt Service 3&lt /a &gt <br>
+            &lt /div &gt <br>
+        &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt Portfolio&lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt Contact&lt /a &gt &lt /li &gt <br>
+    &lt /ul &gt <br>
+&lt /nav &gt <br>
+</p>
+
+<h1 id='css'>CSS Code</h1>
+<p id='csscode'>
+.navbar.mega-menu .dropdown { <br>
+    position: relative; <br>
+} <br>
+
+.navbar.mega-menu .dropdown .dropdown-content { <br>
+    display: none; <br>
+    position: absolute; <br>
+    background-color: #fff; <br>
+    min-width: 160px; <br>
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); <br>
+    z-index: 1; <br>
+} <br>
+
+.navbar.mega-menu .dropdown:hover .dropdown-content { <br>
+    display: block; <br>
+} <br>
+</p>
+
+<p>Icon-Based Navbar</p>
+<nav class="navbar icon-based">
+    <ul>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+        <li><a href="#"><i class="fas fa-cog"></i></a></li>
+        <li><a href="#"><i class="fas fa-image"></i></a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+</nav>
+<style>
+.navbar.icon-based a i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+</style>
+<h1 id='html'>HTML Code</h1>
+<p id="htmlcode">&lt nav class="navbar icon-based" &gt <br>
+    &lt ul &gt <br>
+        &lt li &gt &lt a href="#" &gt &lt i class="fas fa-home" &gt &lt /i &gt &lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt &lt i class="fas fa-info-circle" &gt &lt /i &gt &lt /a &gt &lt /li &gt<br> 
+        &lt li &gt &lt a href="#" &gt &lt i class="fas fa-cog" &gt &lt /i &gt &lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt &lt i class="fas fa-image" &gt &lt /i &gt &lt /a &gt &lt /li &gt <br>
+        &lt li &gt &lt a href="#" &gt &lt i class="fas fa-envelope" &gt &lt /i &gt &lt /a &gt &lt /li &gt <br>
+    &lt /ul &gt 
+&lt /nav &gt <br>
+</p>
+
+
+
+
+
+
+<style>
+#htmlcode,#csscode{
+    text-align:left;
+    margin-left:20%;
+}
+#html,#css{
+    text-decoration:underline;
+    color:blue;
+    text-align:left;
+    margin-left:20%;
+}
+</style>
+
+`
+
+const footer = `
+<footer class="classic-footer">
+    <p>&copy; 2023 Your Company Name</p>
+</footer>
+<h1>code1</h1>
+<p id='code'>
+&lt footer class="classic-footer" &gt <br>
+    &lt p &gt&copy; 2023 Your Company Name&lt /p &gt <br>
+&lt /footer &gt <br>
+</p>
+
+
+
+<footer class="gradient-footer">
+    <p>&copy; 2023 Your Company Name</p>
+</footer>
+<h1>code2</h1>
+<p id='code'>
+&lt footer class="gradient-footer" &gt  <br>
+    &lt p &gt&copy; 2023 Your Company Name&lt /p &gt <br>
+&lt /footer &gt <br>
+</p>
+
+
+<footer class="social-media-footer">
+    <ul>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</footer>
+<h1>code3</h1>
+<p id='code'>
+&lt footer class="social-media-footer" &gt <br>
+    &lt ul &gt <br>
+        &lt li &gt&lt a href="#" &gt&lt i class="fab fa-facebook" &gt&lt /i &gt&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gt&lt i class="fab fa-twitter" &gt&lt /i &gt&lt /a &gt&lt /li &gt <br>
+        &lt li &gt&lt a href="#" &gt&lt i class="fab fa-instagram" &gt&lt /i &gt&lt /a &gt&lt /li &gt <br>
+    &lt /ul &gt <br>
+&lt /footer &gt <br>
+</p>
+<footer class="contact-info-footer">
+    <p>Contact Us: support@yourcompany.com</p>
+</footer>
+<h1>code4</h1>
+<p id='code'>
+&lt footer class="contact-info-footer" &gt <br>
+    &lt p &gtContact Us: support@yourcompany.com&lt /p &gt <br>
+&lt /footer &gt <br>
+</p>
+
+
+
+
+
+<style>
+.contact-info-footer {
     background-color: #333;
-    color: white;
-    padding: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-nav ul {
+.social-media-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media-footer ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-nav li {
+.social-media-footer li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
+    font-size: 24px;
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+.gradient-footer {
+    background: linear-gradient(135deg, #e66465, #9198e5);
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 }
-
-
-**4. JavaScript (Optional)**
-
-You can include JavaScript (main.js) to add interactivity to your site. For example, you might use it for form validation or handling user interactions.
-
-**5. Assets**
-
-Store your images and other assets in the images directory.
-
-**6. Hosting**
-
-To make your static web application accessible on the internet, you can use services like GitHub Pages, Netlify, or Vercel. Simply push your project to a repository on GitHub and configure your hosting service.
-
-Remember that this is a basic template. You can expand it by adding more pages, content, and features according to your project's requirements. If you need more advanced functionality, consider using a static site generator like Gatsby or Jekyll.
-`;
-
-
-const Dynamic =`
-Creating a dynamic web application involves more complexity 
-and typically requires you to set up a development environment, 
-use a front-end framework like React or Angular, and possibly 
-a back-end framework like Node.js, Python Django, Ruby on Rails, 
-or others, depending on your preferred technology stack. 
-Below is a guide on how to set up a basic dynamic web application 
-using React for the front end and Node.js for the back end.
-
-**Front-End (React)**
-
-1. **Set Up Your Development Environment:**
-   - Install Node.js and npm (Node Package Manager) if you haven't already.
-
-2. **Create a New React App:**
-   - Open your terminal and run the following command to create a new React application:
-     bash
-     npx create-react-app your-app-name
-     cd your-app-name
-     
-
-3. **Build the User Interface:**
-   - Design your application's components, such as header, footer, navigation, and other dynamic elements using React components.
-   - Use a state management library like Redux or React Context for managing global state if needed.
-   
-4. **Fetch Data:**
-   - Use the fetch API or a library like Axios to retrieve data from your server or external APIs.
-   
-5. **Display Data Dynamically:**
-   - Populate your components with dynamic data by rendering fetched data within your React components.
-
-**Back-End (Node.js)**
-
-1. **Set Up Your Development Environment:**
-   - Install Node.js if you haven't already.
-
-2. **Create a New Node.js App:**
-   - Initialize a new Node.js project using npm:
-     bash
-     mkdir your-node-app
-     cd your-node-app
-     npm init -y
-     
-
-3. **Install Dependencies:**
-   - Install necessary packages such as Express.js, a popular web application framework for Node.js:
-     bash
-     npm install express
-     
-
-4. **Build APIs:**
-   - Create API routes in your Node.js application using Express. 
-   For example, you can create routes to retrieve and send data.
-
-5. **Database Integration:**
-   - Integrate a database like MongoDB, PostgreSQL, 
-   MySQL, or others for storing and managing data.
-   - Use a library like Mongoose (for MongoDB) or Sequelize 
-   (for SQL databases) for easy database interaction.
-
-6. **Serve the Front-End:**
-   - Serve your React application from the Node.js server 
-   using a middleware like express.static.
-
-**Connect Front-End and Back-End:**
-
-1. Make API calls from your React components to the endpoints 
-you created in your Node.js application.
-2. Handle responses and update your UI with the data.
-
-**Deployment:**
-
-1. Deploy your front-end and back-end to a hosting provider or 
-cloud platform. Popular options include Heroku, AWS, Netlify, 
-and Vercel.
-
-2. Ensure that your server and database are properly configured 
-for production.
-
-3. Update your React app's configuration to use the production 
-server's URL.
-
-4. Build and optimize your React app for production using npm run build.
-
-5. Deploy both your front-end and back-end to the hosting provider.
-
-Remember that creating a dynamic web application is a substantial 
-project, and this guide provides a simplified overview. 
-Depending on your project's complexity, you might need to 
-use more libraries, set up authentication, and implement 
-advanced features. Additionally, thorough testing and security 
-considerations are crucial for a production-ready application.
-`;
-
-const defaults = `
-Creating a complete JSX template for a normal website 
-with a header, footer, navbar, carousel, cards, and more 
-would require a substantial amount of code. However, 
-I can provide you with a simplified example to get 
-you started. You can expand and customize it further 
-according to your needs.
-
-Here's a basic template using React for your website:
-
-import React from 'react';
-
-function App() {
-  return (
-    <div>
-      {/* Header */}
-      <header>
-        <h1>Your Website</h1>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      {/* Carousel */}
-      <div className="carousel">
-        {/* Add your carousel content here */}
-      </div>
-
-      {/* Main Content */}
-      <main>
-        {/* Cards */}
-        <div className="card">
-          <h2>Card 1</h2>
-          <p>Card content goes here.</p>
-        </div>
-
-        <div className="card">
-          <h2>Card 2</h2>
-          <p>Card content goes here.</p>
-        </div>
-
-        {/* Add more cards as needed */}
-      </main>
-
-      {/* Footer */}
-      <footer>
-        <p>&copy; {new Date().getFullYear()} Your Website</p>
-      </footer>
-    </div>
-  );
+</style>
+<style>
+.classic-footer {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
 }
-
-export default App;
-
-In this example, you have a simple structure with a header, 
-a navigation bar, a carousel (you'll need to replace the 
-comment with your carousel component or code), a section 
-for cards, and a footer.
-
-Remember that this is a basic starting point. Depending on 
-your project, you may want to use additional libraries and 
-components for more advanced features. You'll also need to 
-style your components with CSS or a UI framework like Bootstrap 
-to make it visually appealing.
-
-Please adjust and expand this template to fit your specific 
-project requirements and design preferences.
+#code{
+    text-align:left;
+    margin-left:20%;
+}
+</style>
 `
 
-const single = `
-Creating a single-page web application (SPA) typically 
-involves building a dynamic web application that loads 
-and updates content without requiring a full page reload. 
-SPAs are commonly built using JavaScript frameworks like React, 
-Angular, or Vue. I'll provide a simple template for a SPA using 
-React as an example and some guidance to get you started.
-
-First, make sure you have Node.js and npm (Node Package Manager) 
-installed on your system.
-
-Here's a step-by-step guide to creating a basic React SPA:
-
-**Step 1: Create a React App**
-
-You can use Create React App to quickly set up a React project. 
-Open your terminal and run:
-
-bash
-npx create-react-app my-spa
-
-
-Replace my-spa with your desired project name.
-
-**Step 2: Project Structure**
-
-Once your project is created, your project structure will look something like this:
-
-
-my-spa/
-  src/
-    App.js
-    index.js
-  public/
-    index.html
-  package.json
-
-
-- src/App.js: This is the main component where you'll build your SPA.
-- public/index.html: The HTML template for your SPA.
-- index.js: Entry point for your React app.
-
-**Step 3: Build Your SPA**
-
-Now, you can build your single-page application within src/App.js 
-and its child components. For example:
-
-jsx
-import React from 'react';
-
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>My SPA</h1>
-      </header>
-
-      <main>
-        {/* Your SPA content goes here */}
-      </main>
-
-      <footer>
-        <p>&copy; {new Date().getFullYear()} My SPA</p>
-      </footer>
-    </div>
-  );
-}
-
-export default App;
-
-
-You can create additional components and use React Router for navigation to different views or pages within your SPA.
-
-**Step 4: Run Your SPA**
-
-In the terminal, navigate to your project directory and run:
-
-bash
-npm start
-
-
-This will start a development server, and your SPA will be 
-accessible at http://localhost:3000.
-
-**Step 5: Add Routing (Optional)**
-
-If your SPA needs multiple views or pages, you can use 
-React Router. Install it by running:
-
-bash
-npm install react-router-dom
-
-
- Then, configure your routes in your App.js and create additional 
-components for each route.
-
-**Step 6: Styling**
-
-You can style your SPA using CSS, a CSS preprocessor like Sass, 
-or a CSS-in-JS solution. You can import your styles into your 
-components or use a CSS framework like Bootstrap or Material-UI.
-
-**Step 7: Deployment**
-
-When your SPA is ready, you can deploy it to a web hosting 
-service or platform of your choice. You'll typically build 
-a production-ready version of your app using npm run build
- and then deploy the contents of the build directory.
-
-This is a basic template and guide to get you started with 
-a React-based single-page web application. As your project 
-requirements and complexity grow, you can explore more 
-advanced topics like state management, API integration, 
-and optimization.
+const header = `
+<h1>Here Some Header Designs</h1>
 `
 
-const multiple = `
-Creating a multi-page web application using React involves setting up a routing system to manage different pages or views. Here's a step-by-step guide and a template to help you get started:
-
-1. **Setup**: Ensure you have Node.js and npm (Node Package Manager) installed on your system.
-
-2. **Create a React App**: Use create-react-app to set up a new React project. If you don't have it installed, run:
-
-   bash
-   npx create-react-app my-multi-page-app
-   cd my-multi-page-app
-   
-
-3. **Install React Router**: React Router is a popular library for handling routing in React applications. You can install it by running:
-
-   bash
-   npm install react-router-dom
-   
-
-4. **Create Components**: For each page or view, 
-create a React component. For example, you can create a Home.js,
- About.js, and Contact.js component for a basic multi-page app.
-
-   jsx
-   // Home.js
-   import React from 'react';
-
-   function Home() {
-     return (
-       <div>
-         <h1>Home Page</h1>
-         {/* Add content specific to the home page */}
-       </div>
-     );
-   }
-
-   export default Home;
-   
-
-   Repeat this for the other pages: About.js and Contact.js.
-
-5. **Set Up Routing**: Create a new file App.js or modify 
-the existing one to set up routing using React Router:
-
-   jsx
-   import React from 'react';
-   import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-   import Home from './Home';
-   import About from './About';
-   import Contact from './Contact';
-
-   function App() {
-     return (
-       <Router>
-         <Switch>
-           <Route exact path="/" component={Home} />
-           <Route path="/about" component={About} />
-           <Route path="/contact" component={Contact} />
-         </Switch>
-       </Router>
-     );
-   }
-
-   export default App;
-   
-
-6. **Navigation Links**: Create a navigation bar (header) 
-in a separate component and include links to navigate between 
-the pages.
-
-   jsx
-   // Navbar.js
-   import React from 'react';
-   import { Link } from 'react-router-dom';
-
-   function Navbar() {
-     return (
-       <nav>
-         <ul>
-           <li><Link to="/">Home</Link></li>
-           <li><Link to="/about">About</Link></li>
-           <li><Link to="/contact">Contact</Link></li>
-         </ul>
-       </nav>
-     );
-   }
-
-   export default Navbar;
-   
-
-   Include this Navbar component in your App.js to display it on all pages.
-
-7. **Page Navigation**: Now, you can navigate between pages using 
-the links in your navigation bar. Each link corresponds to a specific 
-route, and when clicked, the content of the corresponding component 
-will be displayed.
-
-8. **Styling and Further Customization**: Style your components with 
-CSS or use a CSS-in-JS solution like styled-components. You can also 
-add more features and components as per your application's 
-requirements.
-
-9. **Build and Run**: To build your application, run:
-
-   bash
-   npm run build
-   
-
-   To start the development server, use:
-
-   bash
-   npm start
-   
-
-This is a basic template and guide to create a multi-page web application 
-using React. You can expand and customize it further to meet your 
-specific project needs, such as handling more complex routing 
-scenarios, adding data fetching, and integrating additional libraries
- and components.
+const slider = `
+<h1>Here Some Slider Designs</h1>
 `
 
-const animated = `
-Creating an animated web application involves several steps, 
-and it can be a complex task. Below, I'll provide you with a 
-basic animated web application template using React, along with 
-some guidance on how to get started.
 
-**Step 1: Set Up Your Environment**
+module.exports = {static,header,slider,footer,navbar,Dynamic,react,angular,vue,ecomm}
 
-Make sure you have Node.js and npm (Node Package Manager) 
-installed on your computer. You can download them from the 
-official website: https://nodejs.org/
-
-Create a new React application using Create React App. Open 
-your terminal and run:
-
-bash
-npx create-react-app animated-web-app
-
-
-**Step 2: Project Structure**
-
-Once your project is set up, your project directory should 
-look something like this:
-
-
-animated-web-app/
-  ├── src/
-  │   ├── components/
-  │   │   ├── Header.js
-  │   │   ├── MainContent.js
-  │   │   ├── Footer.js
-  │   ├── App.js
-  │   ├── App.css
-  │   ├── index.js
-  │   └── index.css
-  ├── package.json
-  ├── package-lock.json
-  └── public/
-      ├── index.html
-      ├── manifest.json
-
-
-**Step 3: Create Components**
-
-In your src/components directory, create the necessary components 
-for your web application. For example:
-
-- Header.js: This component includes the header of your application.
-- MainContent.js: This component is the main content area where you 
-can add your animated elements.
-- Footer.js: This component includes the footer of your application.
-
-You can use popular animation libraries like react-spring or 
-framer-motion to add animations to your components. 
-For example, using react-spring:
-
-jsx
-// MainContent.js
-import React from 'react';
-import { useSpring, animated } from 'react-spring';
-
-function MainContent() {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
-
-  return (
-    <animated.div style={props}>
-      {/* Your animated content goes here */}
-    </animated.div>
-  );
-}
-
-export default MainContent;
-
-
-**Step 4: Add Routing**
-
-If your web application has multiple pages, consider adding routing. 
-You can use the react-router-dom library to set up routing in your app.
-
-**Step 5: Styling**
-
-Use CSS or a CSS-in-JS library like styled-components to style your
- components. You can also leverage libraries like Material-UI or 
- Bootstrap for pre-built UI components.
-
-**Step 6: Implement Functionality**
-
-Add the necessary functionality to your components. This may include 
-user interactions, fetching data from an API, or handling user input.
-
-**Step 7: Test and Optimize**
-
-Thoroughly test your application to ensure that animations and 
-functionality work as expected. Optimize your code and assets 
-for performance.
-
-**Step 8: Deployment**
-
-When your animated web application is ready, you can deploy it 
-to a hosting service like Vercel, Netlify, or GitHub Pages.
-
-This is a basic template and guideline for creating an animated
- web application using React. Depending on your project's complexity,
-  you may need to add more features, libraries, and optimize your 
-  code for production. Additionally, explore the documentation of 
-  animation libraries like react-spring or framer-motion to 
-  implement more advanced animations.
-` 
-
-module.exports = {animated,ecommerce,static,Dynamic,defaults,single,multiple}

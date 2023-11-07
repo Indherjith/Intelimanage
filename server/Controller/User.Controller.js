@@ -37,8 +37,19 @@ const signup = async(req,res)=>{
     }
 }
 
+const alluser = async(req,res)=>{
+    const user = await Usermodel.find();
+    try{
+        res.send({"msg":"here all user data","users":user})
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
 const login = async(req,res)=>{
     const {email,password} = req.body;
+    console.log(req.body);
 
     const user = await Usermodel.findOne({email});
     if(!user?.email){
@@ -54,7 +65,7 @@ const login = async(req,res)=>{
             }
             if(result){
                 const token = jwt.sign({ userId : user._id },process.env.JWT_SECRET);
-                res.json({"msg" : "Login successfull", token})
+                res.json({"msg" : "Login successfull", token,"user":{"name":user.firstname+user.lastname,"email":user.email,"designation":user.designation}})
             }
             else{
                 res.send("Invalid credentials, plz signup if you haven't")
@@ -65,4 +76,4 @@ const login = async(req,res)=>{
 
 
 
-module.exports = {signup,login}
+module.exports = {signup,login,alluser}

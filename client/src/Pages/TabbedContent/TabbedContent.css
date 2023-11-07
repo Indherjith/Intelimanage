@@ -1,0 +1,30 @@
+.tabmain{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.side{
+  width: 20%;
+  border: 1px solid blue;
+  position: fixed;
+  height: 50vh;
+  padding:10px ;
+  margin-top: 50px;
+  min-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side > button{
+  height: 40px;
+  background-color: blue;
+  width: 100%;
+  color: white;
+}
+
+.content{
+  text-align: left;
+  margin-left: 25%;
+}

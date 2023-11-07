@@ -1,8 +1,9 @@
 const {Router} = require("express");
-const {signup,login} = require("../Controller/User.Controller")
+const {signup,login,alluser} = require("../Controller/User.Controller")
 
 const UserRouter = Router();
 
+UserRouter.get("/",alluser);
 UserRouter.post("/signup",signup);
 UserRouter.post("/login",login);
 

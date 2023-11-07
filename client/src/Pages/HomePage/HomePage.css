@@ -1,0 +1,88 @@
+/* HomePage.css */
+
+.home-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .hero h1{
+    font-size: 30px;
+    color: #39CCCC;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero {
+    background: #0074d9;
+    color: #fff;
+    padding: 4rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #39CCCC;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  
+  
+  .feature {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  i {
+    font-size: 2rem;
+  }
+
+  @media all and (max-width:426px){
+    .features{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Add more styling as needed */
+  

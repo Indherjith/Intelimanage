@@ -4,20 +4,20 @@ const {Usermodel} = require("../Model/User.Model");
 const projects = async(req,res)=>{
     try{
         const data = await Projectmodel.find();
-        res.send(data);
+        res.send({"projects":data,"msg":"Here your projects"});
     }
     catch(err){
         console.log(err);
-        res.send(`Data Not Available!`)
+        res.send({"msg":`Data Not Available!`})
     }   
 }
 
 const addproject = async(req,res)=>{
-    const {title,manager,teamlead,teammembers,tasks,userId} = req.body;
+    const {title,manager,teamlead,teammembers,description,tasks,userId} = req.body;
     const user = await Usermodel.findOne({_id:userId});
     try{
         if(user.designation === 'Project_Manager'){
-            const project = new Projectmodel({title,manager,teamlead,teammembers,tasks});
+            const project = new Projectmodel({title,manager,description,teamlead,teammembers,tasks});
             await project.save();
             res.send({"msg":"Project Created Successfully!"});
         } 
@@ -33,9 +33,10 @@ const addproject = async(req,res)=>{
 
 const editproject = async (req, res) => {
     const {id} = req.params
+    console.log(id,req.body);
     try{
         await Projectmodel.updateOne({_id:id},{...req.body});
-        res.send({ message: "Project updated successfully"});
+        res.send({ msg: "Project updated successfully"});
     }
     catch(err){
         console.log(err);
@@ -45,8 +46,9 @@ const editproject = async (req, res) => {
 
   const deleteproject = async (req, res) => {
     const {id} = req.params;
+    console.log(id);
     await Projectmodel.deleteOne({_id: id});
-    res.send({ message: "Project Deleted successfully"});
+    res.send({ msg: "Project Deleted successfully"});
   };
 
 module.exports = {projects,addproject,editproject,deleteproject}
